@@ -1,0 +1,39 @@
+@api =  http://localhost:8080/api/dietas
+
+
+###Get all usuarios
+GET {{api}}
+
+### Get all usuarios
+GET http://localhost:8080/api/dietas
+
+
+### Get usuario by id
+GET http://localhost:8080/api/dieta/1
+
+
+### Create usuario
+POST http://localhost:8080/api/dieta
+Content-Type: application/json
+
+{
+    "IDcategoria" : 1,
+    "IDalimento": 1,
+    "IDusuario": 1,
+    "fecha": "2023-10-11"
+}
+
+### Update usuario
+PUT http://localhost:8080/api/dieta/1
+Content-Type: application/json
+
+{
+    "IDcategoria" : 1,
+    "IDalimento": 1,
+    "IDusuario": 1,
+    "fecha": "2023-10-11"
+}
+
+### Delete usuario
+
+DELETE http://localhost:8080/api/dieta/2

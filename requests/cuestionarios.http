@@ -1,0 +1,57 @@
+@api =  http://localhost:8080/api/cuestionarios
+
+
+###Get all cuestionarios
+GET {{api}}
+
+### Get all cuestionarios
+GET http://localhost:8080/api/cuestionarios
+
+
+### Get cuestionario by id
+GET http://localhost:8080/api/cuestionario/1
+
+
+### Create cuestionario 
+POST http://localhost:8080/api/cuestionario
+Content-Type: application/json
+
+{
+    "suenoInt" : 100,
+    "suenoFin": 100,
+    "insomnio": 40,
+    "desayuno": "hotcakes10",
+    "comida": "tacos10",
+    "cena": "pizza190",
+    "duracion": 100,
+    "medicamento": 10,
+    "frecuencia": 20,
+    "gramos": 200,
+    "fecha": "2020-10-11",
+    "IDusuario": 1,
+    "IDrutina":1
+}
+
+### Update cuestionario
+PUT http://localhost:8080/api/cuestionario/5
+Content-Type: application/json
+
+{
+    "suenoInt" : 20,
+    "suenoFin": 20,
+    "insomnio": 10,
+    "desayuno": "popo",
+    "comida": "tacos de perro",
+    "cena": "pizza",
+    "duracion": 10,
+    "medicamento": 1,
+    "frecuencia": 2,
+    "gramos": 20,
+    "fecha": "2020-10-10",
+    "IDusuario": 1,
+    "IDrutina":1
+}
+
+### Delete cuestionario
+
+DELETE http://localhost:8080/api/cuestionario/2

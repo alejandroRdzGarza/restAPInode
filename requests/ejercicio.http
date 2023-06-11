@@ -1,0 +1,39 @@
+@api =  http://localhost:8080/api/ejercicios
+
+
+###Get all usuarios
+GET {{api}}
+
+### Get all usuarios
+GET http://localhost:8080/api/ejercicios
+
+
+### Get usuario by id
+GET http://localhost:8080/api/ejercicio/1
+
+
+### Create usuario
+POST http://localhost:8080/api/ejercicio
+Content-Type: application/json
+
+{
+    "nombre" : "press militar de hombros",
+    "descripcion": "levantar pesas sobre los hombros",
+    "calorias": "200",
+    "musculo": "hombro"
+}
+
+### Update usuario
+PUT http://localhost:8080/api/ejercicio/1
+Content-Type: application/json
+
+{
+    "nombre" : "press militar de hombros",
+    "descripcion": "levantar pesas sobre los hombros",
+    "calorias": "200",
+    "musculo": "hombro"
+}
+
+### Delete usuario
+
+DELETE http://localhost:8080/api/ejercicio/2

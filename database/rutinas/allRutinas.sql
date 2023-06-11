@@ -1,0 +1,5 @@
+SELECT [IDrutina]
+        ,[dia]
+        ,[IDejercicio]
+        ,[IDusuario]
+FROM [dbo].[rutina]

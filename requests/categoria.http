@@ -1,0 +1,33 @@
+@api =  http://localhost:8080/api/categorias
+
+
+###Get all usuarios
+GET {{api}}
+
+### Get all usuarios
+GET http://localhost:8080/api/categorias
+
+
+### Get usuario by id
+GET http://localhost:8080/api/categoria/1
+
+
+### Create usuario
+POST http://localhost:8080/api/categoria
+Content-Type: application/json
+
+{
+    "nombre" : "pastas"
+}
+
+### Update usuario
+PUT http://localhost:8080/api/categoria/10
+Content-Type: application/json
+
+{
+    "nombre" : "pastas"
+}
+
+### Delete usuario
+
+DELETE http://localhost:8080/api/categoria/10

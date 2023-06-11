@@ -1,0 +1,47 @@
+@api =  http://localhost:8080/api/alimentos
+
+
+###Get all alimentos
+GET {{api}}
+
+### Get all alimentos
+GET http://localhost:8080/api/alimentos
+
+
+### Get alimento by id
+GET http://localhost:8080/api/alimento/1
+
+
+### Create alimento
+POST http://localhost:8080/api/alimento
+Content-Type: application/json
+
+{
+    "nombre" : "wagyu",
+    "descripcion": "fruta tropical de alto indice nutricional",
+    "calorias": 100,
+    "proteinas": 5,
+    "azucares": 10,
+    "carbohidratos": 20,
+    "gramos": 300,
+    "grasas": 0
+}
+
+### Update alimento
+PUT http://localhost:8080/api/alimento/1
+Content-Type: application/json
+
+{
+    "nombre" : "sandia",
+    "descripcion": "fruta tropical de alto indice nutricional",
+    "calorias": 100,
+    "proteinas": 5,
+    "azucares": 10,
+    "carbohidratos": 20,
+    "gramos": 300,
+    "grasas": 0
+}
+
+### Delete alimento
+
+DELETE http://localhost:8080/api/alimento/2

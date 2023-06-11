@@ -1,0 +1,11 @@
+SELECT [IDalimento]
+        ,[nombre]
+        ,[descripcion]
+        ,[calorias]
+        ,[proteinas]
+        ,[azucares]
+        ,[carbohidratos]
+        ,[gramos]
+        ,[grasas]
+FROM [dbo].[alimento]
+WHERE [IDalimento] = @IDalimento

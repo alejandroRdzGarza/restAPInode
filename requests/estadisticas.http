@@ -1,0 +1,43 @@
+@api =  http://localhost:8080/api/estadisticas
+
+
+###Get all estadisticas
+GET {{api}}
+
+### Get all estadisticas
+GET http://localhost:8080/api/estadisticas
+
+
+### Get estadistica by id
+GET http://localhost:8080/api/estadistica/1
+
+
+### Create estadistica 
+POST http://localhost:8080/api/estadistica
+Content-Type: application/json
+
+{
+    "trofeos" : "10",
+    "juegosCompletados": 10,
+    "efectividad" : 10,
+    "rachaDias": 10,
+    "fecha": "2020-10-11",
+    "IDusuario": 1
+}
+
+### Update estadistica
+PUT http://localhost:8080/api/estadistica/1
+Content-Type: application/json
+
+{
+    "trofeos" : "10",
+    "juegosCompletados": 10,
+    "efectividad" : 10,
+    "rachaDias": 10,
+    "fecha": "2020-10-11",
+    "IDusuario": 1
+}
+
+### Delete estadistica
+
+DELETE http://localhost:8080/api/estadistica/8

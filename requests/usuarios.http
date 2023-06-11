@@ -1,0 +1,41 @@
+@api =  http://localhost:8080/api/usuarios
+
+
+###Get all usuarios
+GET {{api}}
+
+### Get all usuarios
+GET http://localhost:8080/api/usuarios
+
+
+### Get usuario by id
+GET http://localhost:8080/api/usuario/1
+
+
+### Create usuario
+POST http://localhost:8080/api/usuario
+Content-Type: application/json
+
+{
+    "nombre" : "senor troy",
+    "edad": 1,
+    "telefono": "94824982942",
+    "mail": "maxhema42@gmaicom",
+    "fecha": "2023-10-11"
+}
+
+### Update usuario
+PUT http://localhost:8080/api/usuario/1
+Content-Type: application/json
+
+{
+    "nombre" : "kira",
+    "edad": 1,
+    "telefono": "94824982942",
+    "mail": "maxhema42@gmaicom",
+    "fecha": "2023-10-11"
+}
+
+### Delete usuario
+
+DELETE http://localhost:8080/api/usuario/2

@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/d8523df4-0a8d-4fe1-ab04-ca9786f1bbe7/resourceGroups/Equipo5/providers/Microsoft.Web/sites/nutretec-Rest-Api",
+    "appService.deploySubpath": "."
+}
