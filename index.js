@@ -28,4 +28,4 @@ app.use('/api', alimentoRoutes.routes);
 
 
 
-app.listen(config.port, () => console.log('Server is listening on http://localhost:' + config.port));
+app.listen(process.env.PORT, () => console.log('Server is listening on http://localhost:' + process.env.PORT));
